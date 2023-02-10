@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TLobo Bank</title>
+  <script src="./index.js" async></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="./assets/TLoboBank.png" height="150" alt="TLobo Bank"/>
+    <h1>TLobo Bank</h1>
+    
+  </header>
+  <p class="paragrafo">Preencha o formulário para criar<br> seu cadastro e abrir sua conta:</p>
+  <br>
+  <main>
+    <form id="form-cadastro">
+      <div>
+        <label for="nome">Nome:</label>
+        <input class="text-box" required id="nome" type="text" placeholder="Digite seu nome completo" />
+      </div>
+      <br>
+
+      <div>
+        <label for="cpf">CPF:</label>
+        <input class="text-box" required id="cpf" type="text" placeholder="Digite seu CPF" />
+      </div>
+      <br>
+
+      <div>
+        <label for="celular">Celular:</label>
+        <input class="text-box" required id="celular" type="text" placeholder="Digite seu Celular" />
+      </div>
+      <br>
+
+      <div>
+        <label for="senha">Senha:</label>
+        <input class="text-box" required id="senha" type="password" placeholder="Digite sua Senha" />
+      </div>
+      <br>
+
+      <div>
+        <label for="confirmarsenha">Confirmar Senha:</label>
+        <input class="text-box" required id="confirmarsenha" type="password" placeholder="Confirme sua Senha" />
+      </div>
+      <br>
+
+      <div>
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar</button>
+      </div>
+
+    </form>
+
+    <br><br><br>
+
+    <div>
+      <p class="paragrafo">Preencha os dados a seguir<br> para acessar sua conta:</p>
+    </div>
+    <br>
+    <form id="form-operacao">
+      <div>
+        <label for="conta">Conta:</label>
+        <input class="text-box" required id="conta" type="number" placeholder="Digite a sua conta">
+      </div>
+      <br>
+
+      <div>
+        <label for="operacao">Operação:</label>
+        <select class="text-box" required id="operacao">
+          <option value="saque">Saque</option>
+          <option value="deposito">Depósito</option>
+          <option value="saldo">Consulta Saldo</option>
+          </select>
+      </div>
+      <br>
+
+      <div>
+        <label for="valor">Valor:</label>
+        <input class="text-box" required id="valor" type="number" placeholder="Digite o valor">
+      </div>
+      <br>
+
+      <div>
+        <label for="senhaoperacao">Senha:</label>
+        <input class="text-box" required id="senhaoperacao" type="password" placeholder="Digite sua Senha" />
+      </div>
+      <br>
+
+      <div>
+        <button type="reset">Limpar</button>
+        <button type="submit">Confirmar</button>
+      </div>
+
+
+    </form>
+  </main>
+
+  <footer>
+    <p>TLobo Bank</p>
+  </footer>
+</body>
+</html>
